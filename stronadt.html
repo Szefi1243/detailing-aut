@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Auto Detailing</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+    }
+
+    .navbar {
+      display: flex;
+      gap: 20px;
+      padding: 20px 40px;
+      background: #000000cc;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 10px;
+      transition: background 0.3s;
+    }
+
+    .navbar a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+
+    .hero {
+      height: 100vh;
+      background-image: url('auto.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .hero-overlay {
+      background: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+    }
+
+    .hero-content h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      padding: 60px 40px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      padding-bottom: 10px;
+    }
+
+    ul {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-left: 20px;
+      list-style: disc;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .contact-info {
+      font-size: 20px;
+      line-height: 2;
+    }
+
+    a {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="#start">Start</a>
+    <a href="#uslugi">Usługi</a>
+    <a href="#cennik">Cennik</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <!-- START -->
+  <section id="start" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Auto Detailing</h1>
+      <p>
+        Profesjonalna pielęgnacja Twojego auta.<br />
+        Lakier, wnętrze, felgi – wszystko jak nowe. <br />
+        Zadbamy o każdy detal Twojego samochodu.
+      </p>
+    </div>
+  </section>
+
+  <!-- USŁUGI -->
+  <section id="uslugi" class="section">
+    <h2>Usługi</h2>
+    <ul>
+      <li>Detailing wnętrza – czyszczenie tapicerki, plastików, skóry</li>
+      <li>Polerowanie lakieru – usuwanie rys, nadanie blasku</li>
+      <li>Ceramiczne powłoki ochronne</li>
+      <li>Mycie detailingowe z dekontaminacją</li>
+      <li>Renowacja reflektorów</li>
+    </ul>
+  </section>
+
+  <!-- CENNIK -->
+  <section id="cennik" class="section">
+    <h2>Cennik</h2>
+    <ul>
+      <li>Detailing wnętrza – od 300 zł</li>
+      <li>Polerowanie 1-etapowe – od 500 zł</li>
+      <li>Powłoka ceramiczna – od 800 zł</li>
+      <li>Renowacja lamp – od 100 zł</li>
+      <li>Pełny pakiet detailingowy – od 1200 zł</li>
+    </ul>
+    <p><em>*Ceny mogą się różnić w zależności od stanu pojazdu.</em></p>
+  </section>
+
+  <!-- GALERIA -->
+  <section id="galeria" class="section">
+    <h2>Galeria</h2>
+    <p>Tu możesz dodać zdjęcia przed/po detailingu lub pokaz slajdów.</p>
+  </section>
+
+  <!-- KONTAKT -->
+  <section id="kontakt" class="section">
+    <h2>Kontakt</h2>
+    <div class="contact-info">
+      <p>📞 Telefon: <a href="tel:697163520">697 163 520</a></p>
+      <p>📧 Email: <a href="mailto:lex12430205@gmail.com">lex12430205@gmail.com</a></p>
+    </div>
+  </section>
+
+</body>
+</html>
